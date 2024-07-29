@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_3.xsd"
+    version="2.3">
+    <managed-bean>
+        <managed-bean-name>UserBean</managed-bean-name>
+        <managed-bean-class>com.jsf.jsf.bean.UserBean</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+        <managed-property>
+            <property-name>firstName</property-name>
+            <property-class>java.lang.String</property-class>
+            <value />
+        </managed-property>
+        <managed-property>
+            <property-name>lastName</property-name>
+            <property-class>java.lang.String</property-class>
+            <value />
+        </managed-property>
+        <managed-property>
+            <property-name>email</property-name>
+            <property-class>java.lang.String</property-class>
+            <value />
+        </managed-property>
+        <managed-property>
+            <property-name>message</property-name>
+            <property-class>java.lang.String</property-class>
+            <value />
+        </managed-property>
+    </managed-bean>
+    <navigation-rule>
+        <from-view-id>/user.xhtml</from-view-id>
+    </navigation-rule>
+</faces-config>
